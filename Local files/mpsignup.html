@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<style>
+body {
+  font-family: Source sans Pro; 
+  padding: 80px;
+
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: 1px solid violet;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+ input[type="radio"]{margin: 10px 0};}
+
+ 
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #3333ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+button:hover {
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: red;
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: center;
+  width: 19%;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 40px;
+}
+
+/* Clear floats */
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+     width: 100%;
+  }
+}
+form{
+  background-color:skyblue; 
+  border:2px solid blue;
+  background-image: url("mpbg1.jpg");
+}
+#wrapper{
+  margin: 5px;
+
+}
+</style>
+<body>
+  <div id="wrapper">
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<form action="">
+  <div class="container">
+    <h1 text-align="center"><b> <font color="#e61291">Create an account</font></b></h1>
+    <p><i><h3> <font color="#e61291">it's very easy and quick</font></h3></i></p>
+    <hr>
+    <div class="flname" style="padding-right: 900px;">
+
+      <label for="fname"><b> <font color="#e61291">First name</font></b></label>
+    <input type="text" placeholder=" Enter First name" name="fname" required>
+      <label for="lname"><b> <font color="#e61291">Last name</font></b></label>
+    <input type="text" placeholder="Enter Last name" name="lname" required>
+
+    <label for="email"><b> <font color="#e61291">Email</font></b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+    <label for="psw"><b> <font color="#e61291">Password</font></b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <label for="psw-repeat"><b> <font color="#e61291">Confirm Password</font></b></label>
+    <input type="password" placeholder="Re-enter Password" name="psw-repeat" required>
+    <label>
+      <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px">  <font color="#e61291">Remember password</font>
+    </label> </br></br>
+
+    <label> <abbr title="Date Of Birth "><b><font color=""> <font color="#e61291">DOB</font></b></abbr>
+    <input type="date" value="Date" required></br>
+    </label></br>
+     <b> <font color="#e61291">Gender:</font></b>
+    <input type="radio" name="gender" value="male"><b> <font color="#e61291">Male</font></b>
+    <input type="radio" name="gender" value="female"><b> <font color="#e61291">Female</font></b>
+    <input type="radio" name="gender" value="others"><b> <font color="#e61291">Others</font></b>
+     
+
+    
+    <p><input type="checkbox" name="agree" required>
+      By creating an account I agree to the MedWeb <a href="#" style="color:blue">Terms & Privacy</a>.
+      
+    </p>
+  </div>
+    <div class="clearfix">
+      <button type="button" class="cancelbtn">Cancel</button>
+      <button type="submit" class="signupbtn">Sign Up</button>
+    </div>
+  </div>
+</form>
+</div>
+</body>
+</html>

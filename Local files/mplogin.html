@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<script type="text/javascript">
+	function openWin()
+	{
+		window.open("file:///C:/Users/ashwi/Documents/html/mpsignup.html");
+	}
+
+</script>
+	<title></title>
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+</head>
+<body>
+<form action="">
+	<div class="signupcontainer" style="position:absolute; right: 0; padding: 15px;">
+		<font color="#18063d">Not a user of <b><shadow>MedWeb</shadow></b>?</font></br>
+		<button type="button" class="signupbtn" value="Open Window" onclick="openWin()">Sign Up</button>
+
+	</div>
+  <div class="imgcontainer">
+    <img src="mplogo1.png" alt="Avatar" class="med1">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b><font color="#18063d">Username</font></b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+	
+    <label for="psw"><b><font color="#18063d">Password</font></b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+	<label>
+      <input type="checkbox" checked="checked" name="remember"> <font color="#18063d">Remember password</font>
+    </label>
+    <button type="submit">Login</button>
+    
+
+	<div class="cancelcontainer" style="padding: 10px;">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw"> <font color="#18063d">Forgot password? </font> <a href="#"> <font color="blue">Click here</font></a></span>
+  	</div>
+
+  </div>
+
+ 	
+</form>
+<style type="text/css">
+	body{
+		background-color:;
+		font-family: Source sans Pro;
+		background-image: ;
+	}
+	form {
+  border: 5px solid #18063d;
+}
+
+/* Full-width inputs */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 1;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color:green ;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+/* Add a hover effect for buttons */
+button:hover {
+  opacity: 0.8;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: red;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+.signupbtn{
+width:auto;
+padding: 10px 55px;
+background-color: slateblue;
+text-align: right;
+}
+/* Avatar image */
+img.med1 {
+  width: 40%;
+  border-radius: 50%;
+  border:2px solid #18063d;
+}
+
+/* Add padding to containers */
+.container {
+  padding-left: 400px;
+  padding-right: 400px;
+}
+
+/* The "Forgot password" text */
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+</style>
+</body>
+</html>

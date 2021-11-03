@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	
+<script type="text/javascript">
+	function onsub(){
+		 
+		 alert("Thankyou!! MedWeb will verify your details and documents and will approach you via mail within next 72 hours.");
+	}
+
+	function onsave(){
+		 
+		 alert("Details Saved");
+	}
+	function oncan(){
+		confirm("Are you sure you want to quit?");
+	}
+</script>
+
+
+
+</head>
+
+
+
+
+<style type="text/css">
+body {
+  font-family: Source sans Pro; 
+  background-color:#18063d; /*#7ba6c0;*/
+
+}
+* {box-sizing: border-box}
+
+/* Full-width input fields */
+input[type=text]{
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 10px 0;
+  display: inline-block;
+  border: 1px solid blue;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+ input[type="radio"]{
+ 	margin: 10px 0;
+ 	border: 1px solid violet;
+ }
+
+
+
+button {
+  background-color: #3333ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border:none ;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+button:hover {
+  opacity:1;
+}
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: red;
+}
+.savebtn{
+	padding: 14px 20px;
+	background-color: green;
+	float: right;
+}
+.submitbtn{
+	position: absolute;
+	right: 535px;
+	width: 30%
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn,.savebtn {
+  width: 19%;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.docup{
+	border:1px solid violet;
+	background-color: #dce6e7;
+	position: absolute;
+    right: 620px;
+}
+
+.docsub{
+	float: right;
+	color: white;
+	background-color:green;
+}
+
+.pdetails{
+	padding-left:400px;
+	padding-right:400px;
+	border: 2px solid blue; 
+	border-radius:40px;
+	background-color:#e1f5f0;
+}
+
+.docs{
+	padding-left: 400px;
+	padding-right:400px; 
+	border: 2px solid blue;
+	border-radius: 40px; 
+	background-color:#e1f5f0;
+}
+
+::-webkit-datetime-edit { padding: 1em; }
+::-webkit-datetime-edit-fields-wrapper { background: silver; }
+::-webkit-datetime-edit-text { color: red; padding: 0 0.3em; }
+::-webkit-datetime-edit-month-field { color: blue; }
+::-webkit-datetime-edit-day-field { color: green; }
+::-webkit-datetime-edit-year-field { color: purple; }
+::-webkit-inner-spin-button { display: none; }
+::-webkit-calendar-picker-indicator { background: orange; }
+
+
+
+</style>
+
+
+
+
+<body>
+	
+<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<div class="headdiv" style="background-color:#18063d; border-radius: 20px;">
+ <h1 style="text-align: center;"><shadow><b><u><font color="#d1abd4">Be a MedWeb Practitioner</font></u></b></shadow></h1>
+ <p style="text-align: center; color: white;"><i>Be a part of MedWeb doctors family! Apply for the job of General Practitioner now!!</i></p>
+</div>
+<div class="pdetails" >
+<form action="">
+	<h3 style="color: #a10d96;"><u><b>Personal details</b></u></h3></br>
+      <label for="fname"><b> <font color="">First name</font></b></label>
+    <input type="text" placeholder=" Enter First name" name="fname" required>
+      <label for="lname"><b> <font color="">Last name</font></b></label>
+    <input type="text" placeholder="Enter Last name" name="lname" required>
+
+          <label for="address"><b> <font color="">Permanent Address</font></b></label>
+    <input type="text" placeholder="Enter Address" name="address" required>
+
+    <label for="email"><b> <font color="">Email</font></b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+
+     <label for="phone"><b> <font color="">Contact number</font></b></label>
+    <input type="text" placeholder="Enter your phone number" name="phone" required>
+</br></br>
+
+    <label> <abbr title="Date Of Birth "><b><font color=""> <font color="">DOB</font></b></abbr>
+    <input type="date" value="date" required></br></br>
+    </label>
+
+     <b> <font color="">Gender:</font></b>
+    <input type="radio" name="gender" value="male"><b> <font color="">Male</font></b>
+    <input type="radio" name="gender" value="female"><b> <font color="">Female</font></b>
+    <input type="radio" name="gender" value="others"><b> <font color="">Others</font></b></br></br>
+    <b>Do you have over two years of experience in this field?</b></br>
+    <input type="radio" name="options" value="Yes"><b> <font color="">Yes</font></b>
+    <input type="radio" name="options" value="no"><b> <font color="">No</font></b>
+</br></br>
+
+   <b> Are you a citizen of India?</b></br>
+    <input type="radio" name="Y" value="Y"><b> <font color="">Yes</font></b>
+    <input type="radio" name="Y" value="N"><b> <font color="">No</font></b>
+</br></br>
+	   <b> Are you fluent in speaking any of the Indian languages?</b></br>
+    <input type="radio" name="y" value="y"><b> <font color="">Yes</font></b>
+    <input type="radio" name="y" value="n"><b> <font color="">No</font></b>
+</br></br>
+   <b> How many sessions of 4 hours can you commit per week?</b></br>
+    <input type="radio" name="opt" value=""><b> <font color="">2-3 sessions</font></b></br>
+    <input type="radio" name="opt" value=""><b> <font color="">3-4 sessions</font></b></br>
+    <input type="radio" name="opt" value=""><b> <font color="">4-5 sessions</font></b></br>
+    <input type="radio" name="opt" value=""><b> <font color="">More than 5 sessions</font></b>
+</br></br>
+
+
+    	
+    </label>
+</form>
+</div>
+
+
+   	<div class="docs" >
+     <form method="post" enctype="multipart/form-data">
+     	 <h3 style="color: #a10d96;"><u><b>Upload required documents</b></u></h3></br>
+     	
+            <b>Detailed Resume</b> <input type="file" class="docup" name="my_file[]" multiple>
+            <input type="submit" value="Upload" class="docsub">
+        </br><hr></br>
+
+			<b>Valid ID proof</b> <input type="file" class="docup" name="my_file[]" multiple>
+            <input type="submit" value="Upload" class="docsub">
+
+        </br><hr></br>
+             <b>Address proof</b> <input type="file" class="docup" name="my_file[]" multiple>
+            <input type="submit" value="Upload" class="docsub">
+        </br><hr></br>
+
+         <b>Passport size photo</b> <input type="file" class="docup" name="my_file[]" multiple>
+            <input type="submit" value="Upload" class="docsub">
+        </br><hr></br>
+
+        </form>
+    </div>
+     
+      <p><input type="checkbox" name="agree" required>
+      <font color="white">By submitting the details I Agree to the <a href="#" style="color:blue" onclick="termsfun()">Terms&Privacy policy</a> of MedWeb, and I confirm that all the details mentioned above are true as per my knoweledge.</font>
+       </p>
+
+    <div class="clearfix">
+      <button type="button" class="cancelbtn" onclick="oncan()">Cancel</button>
+       <button type="submit" class="submitbtn" onclick="onsub()">Submit</button>
+      <button type="button" class="savebtn" onclick="onsave()">Save details</button>
+
+
+     
+    </div>
+
+
+
+</body>
+</html>
